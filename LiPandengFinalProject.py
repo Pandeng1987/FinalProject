@@ -9,7 +9,7 @@ from tkinter import ttk
 from tkinter import messagebox
 
 
-class PersonalFinanceApp:
+class PersonalFinance:
     def __init__(self, root):
         self.root = root
         self.root.title("Personal Finance Track Manager")
@@ -147,9 +147,6 @@ class PersonalFinanceApp:
     def submit_expense(self):
         category = self.expense_category_entry.get()
         amount = self.expense_amount_entry.get()
-
-        # In a real application, you would process and store the expense data here.
-        # For demonstration purposes, let's just display the entered data:
         messagebox.showinfo("Expense", f"Category: {category}\nAmount: {amount}")
         self.clear_entries()
 
@@ -157,10 +154,6 @@ class PersonalFinanceApp:
         category = self.budget_category_entry.get()
         amount = self.budget_amount_entry.get()
 
-        # In a real application, you would process and store the budget data here.
-        # For demonstration purposes, let's just display the entered data:
-        messagebox.showinfo("Budget", f"Category: {category}\nAmount: {amount}")
-        self.clear_entries()
 
     def clear_entries(self):
         self.income_date_entry.delete(0, tk.END)
@@ -173,7 +166,7 @@ class PersonalFinanceApp:
 
 def main():
     root = tk.Tk()
-    app = PersonalFinanceApp(root)
+    app = PersonalFinance(root)
     root.mainloop()
 
 
