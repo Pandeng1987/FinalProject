@@ -1,6 +1,6 @@
 """
 LiPandengFinalProject - Personal Finance Track Manager
-Name: Pandeng
+Name: Pandeng Li
 Date: Apr 28, 2024
 """
 
